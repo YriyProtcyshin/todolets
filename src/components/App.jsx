@@ -1,16 +1,13 @@
+import { AddTask } from 'pages/AddTask/AddTask';
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './Layout/Layout';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      toDolets
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route path="add-task" element={<AddTask />} />
+      </Route>
+    </Routes>
   );
 };

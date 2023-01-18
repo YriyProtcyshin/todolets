@@ -1,0 +1,18 @@
+.header {
+  background-color: #27159d;
+}
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 4px;
+}
